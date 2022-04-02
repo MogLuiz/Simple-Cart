@@ -25,7 +25,7 @@ describe('Object to query string', () => {
         second: 'TDD',
       },
     };
-    console.log(queryString(obj));
+
     expect(() => {
       queryString(obj);
     }).toThrowError();
