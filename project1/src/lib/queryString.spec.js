@@ -35,7 +35,7 @@ describe('Object to query string', () => {
 describe('Query string to object', () => {
   it('should a query string to object', () => {
     const qs = 'name=Luiz&profession=developer';
-
+    parse(qs);
     expect(parse(qs)).toEqual({
       name: 'Luiz',
       profession: 'developer',
