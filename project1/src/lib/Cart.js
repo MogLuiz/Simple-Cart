@@ -6,8 +6,9 @@ export default class Cart {
   }
 
   getTotal() {
-    return this.items.reduce((acc, item) => {
-      return acc + item.quantity * item.product.price;
-    }, 0);
+    return this.items.reduce(
+      (acc, item) => acc + item.quantity * item.product.price,
+      0,
+    );
   }
 }
