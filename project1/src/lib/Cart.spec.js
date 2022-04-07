@@ -26,7 +26,7 @@ describe('Cart', () => {
     expect(cart.getTotal()).toEqual(70776);
   });
 
-  it('should ensure no more than on product exists at a time', () => {
+  fit('should ensure no more than on product exists at a time', () => {
     cart.add({
       product,
       quantity: 2,
