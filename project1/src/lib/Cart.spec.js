@@ -74,7 +74,7 @@ describe('Cart', () => {
         quantity: 3,
       });
 
-      expect(cart.checkout()).toEqual();
+      expect(cart.checkout()).toMatchSnapshot();
     });
   });
 });
