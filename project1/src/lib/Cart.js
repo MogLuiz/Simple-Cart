@@ -26,8 +26,6 @@ export default class Cart {
     const total = this.getTotal();
     const items = this.items;
 
-    this.items = [];
-
     return {
       total,
       items,
