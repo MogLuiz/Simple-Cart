@@ -5,8 +5,8 @@ export default class Cart {
   items = [];
 
   add(item) {
-    if (find(this.items, { product: item.product }))
-      remove(this.items, { product: item.product });
+    const itemToFind = { product: item.product };
+    if (find(this.items, itemToFind)) remove(this.items, itemToFind);
 
     this.items.push(item);
   }
