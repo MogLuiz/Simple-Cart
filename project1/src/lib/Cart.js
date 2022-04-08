@@ -22,9 +22,20 @@ export default class Cart {
     );
   }
 
-  checkout() {
+  summary() {
     const total = this.getTotal();
     const items = this.items;
+
+    this.items = [];
+
+    return {
+      total,
+      items,
+    };
+  }
+
+  checkout() {
+    const { items, total } = this.summary();
 
     this.items = [];
 
