@@ -73,6 +73,8 @@ describe('Cart', () => {
         product: product2,
         quantity: 3,
       });
+
+      expect(cart.checkout()).toEqual();
     });
   });
 });
