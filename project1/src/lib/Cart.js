@@ -23,9 +23,14 @@ export default class Cart {
   }
 
   checkout() {
+    const total = this.getTotal();
+    const items = this.items;
+
+    this.items = [];
+
     return {
-      total: this.getTotal(),
-      items: this.items,
+      total,
+      items,
     };
   }
 }
