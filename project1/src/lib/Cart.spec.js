@@ -105,7 +105,7 @@ describe('Cart', () => {
   });
 
   describe('special conditions', () => {
-    fit('should apply percentage discount when certain quantity threshold is passed', () => {
+    it('should apply percentage discount when certain quantity threshold is passed', () => {
       const condition = {
         percentage: 30,
         minimum: 2,
