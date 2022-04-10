@@ -1,6 +1,12 @@
 // Utils
 import find from 'lodash/find';
 import remove from 'lodash/remove';
+import dinero from 'dinero.js';
+
+const Money = dinero;
+
+Money.defaultCurrency = 'BRL';
+Money.defaultPrecision = 2;
 export default class Cart {
   items = [];
 
@@ -18,7 +24,7 @@ export default class Cart {
   getTotal() {
     return this.items.reduce(
       (acc, item) => acc + item.quantity * item.product.price,
-      0,
+      Money({ amount: 0 }),
     );
   }
 
