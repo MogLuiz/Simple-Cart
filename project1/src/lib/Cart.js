@@ -23,13 +23,14 @@ export default class Cart {
 
   getTotal() {
     return this.items.reduce(
-      (acc, item) => acc + item.quantity * item.product.price,
+      (acc, item) =>
+        acc.add(Money({ amount: item.quantity * item.product.price })),
       Money({ amount: 0 }),
     );
   }
 
   summary() {
-    const total = this.getTotal();
+    const total = this.getTotal().getAmount();
     const items = this.items;
 
     return {
