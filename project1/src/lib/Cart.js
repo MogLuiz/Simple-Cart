@@ -33,6 +33,12 @@ export default class Cart {
       const amount = Money({ amount: item.quantity * item.product.price });
       let discount = calculatePercentageDiscount(amount, item);
 
+      if (item.condition?.percentage) {
+        discount = calculatePercentageDiscount(amount, item);
+      } else if (item.condition?.quantity) {
+        discount = calculatePercentageDiscount(amount, item);
+      }
+
       return acc.add(amount).subtract(discount);
     }, Money({ amount: 0 }));
   }

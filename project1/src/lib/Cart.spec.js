@@ -120,6 +120,20 @@ describe('Cart', () => {
       expect(cart.getTotal().getAmount()).toEqual(74315);
     });
 
+    it('should apply quantity discount for even quantities', () => {
+      const condition = {
+        quantity: 2,
+      };
+
+      cart.add({
+        product,
+        condition,
+        quantity: 4,
+      });
+
+      expect(cart.getTotal().getAmount()).toEqual(74776);
+    });
+
     it('should apply quantity discount for odd quantities', () => {
       const condition = {
         quantity: 2,
