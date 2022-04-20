@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1650486238827" clover="3.2.0">
-  <project timestamp="1650486238827" name="All files">
-    <metrics statements="46" coveredstatements="44" conditionals="26" coveredconditionals="24" methods="13" coveredmethods="13" elements="85" coveredelements="81" complexity="0" loc="46" ncloc="46" packages="1" files="3" classes="3"/>
+<coverage generated="1650486626077" clover="3.2.0">
+  <project timestamp="1650486626077" name="All files">
+    <metrics statements="46" coveredstatements="46" conditionals="26" coveredconditionals="26" methods="13" coveredmethods="13" elements="85" coveredelements="85" complexity="0" loc="46" ncloc="46" packages="1" files="3" classes="3"/>
     <file name="Cart.js" path="/home/seidor/Downloads/cursoJsTestes/project1/src/lib/Cart.js">
-      <metrics statements="31" coveredstatements="29" conditionals="16" coveredconditionals="14" methods="8" coveredmethods="8"/>
+      <metrics statements="31" coveredstatements="31" conditionals="16" coveredconditionals="16" methods="8" coveredmethods="8"/>
       <line num="6" count="1" type="stmt"/>
-      <line num="7" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="7" count="2" type="cond" truecount="4" falsecount="0"/>
       <line num="8" count="1" type="stmt"/>
-      <line num="10" count="0" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
       <line num="13" count="1" type="stmt"/>
-      <line num="14" count="2" type="stmt"/>
-      <line num="15" count="2" type="cond" truecount="3" falsecount="1"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="15" count="3" type="cond" truecount="4" falsecount="0"/>
       <line num="16" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="18" count="0" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
       <line num="21" count="1" type="stmt"/>
       <line num="23" count="1" type="stmt"/>
       <line num="24" count="1" type="stmt"/>
-      <line num="26" count="10" type="stmt"/>
-      <line num="29" count="13" type="stmt"/>
-      <line num="30" count="13" type="cond" truecount="2" falsecount="0"/>
-      <line num="32" count="13" type="stmt"/>
+      <line num="26" count="12" type="stmt"/>
+      <line num="29" count="15" type="stmt"/>
+      <line num="30" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="32" count="15" type="stmt"/>
       <line num="36" count="1" type="stmt"/>
-      <line num="40" count="12" type="stmt"/>
-      <line num="41" count="13" type="stmt"/>
-      <line num="43" count="13" type="stmt"/>
-      <line num="45" count="13" type="cond" truecount="2" falsecount="0"/>
-      <line num="46" count="1" type="stmt"/>
-      <line num="47" count="12" type="cond" truecount="2" falsecount="0"/>
-      <line num="48" count="2" type="stmt"/>
-      <line num="51" count="13" type="stmt"/>
+      <line num="40" count="14" type="stmt"/>
+      <line num="41" count="15" type="stmt"/>
+      <line num="43" count="15" type="stmt"/>
+      <line num="45" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="46" count="2" type="stmt"/>
+      <line num="47" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="48" count="3" type="stmt"/>
+      <line num="51" count="15" type="stmt"/>
       <line num="56" count="3" type="stmt"/>
       <line num="57" count="3" type="stmt"/>
       <line num="59" count="3" type="stmt"/>
