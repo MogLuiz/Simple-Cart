@@ -177,7 +177,7 @@ describe('Cart', () => {
       expect(cart.getTotal().getAmount()).toEqual(70776);
     });
 
-    it('should receive two or more conditions and determine/apply the best discount. First case', () => {
+    fit('should receive two or more conditions and determine/apply the best discount. First case', () => {
       const condition1 = {
         percentage: 30,
         minimum: 2,
