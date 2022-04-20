@@ -177,7 +177,7 @@ describe('Cart', () => {
       expect(cart.getTotal().getAmount()).toEqual(70776);
     });
 
-    fit('should receive two or more conditions and determine/apply the best discount. First case', () => {
+    it('should receive two or more conditions and determine/apply the best discount. First case', () => {
       const condition1 = {
         percentage: 30,
         minimum: 2,
@@ -193,7 +193,26 @@ describe('Cart', () => {
         quantity: 5,
       });
 
-      expect(cart.getTotal().getAmount()).toEqual(70776);
+      expect(cart.getTotal().getAmount()).toEqual(106164);
+    });
+
+    it('should receive two or more conditions and determine/apply the best discount. Second case', () => {
+      const condition1 = {
+        percentage: 80,
+        minimum: 2,
+      };
+
+      const condition2 = {
+        quantity: 2,
+      };
+
+      cart.add({
+        product,
+        condition: [condition1, condition2],
+        quantity: 5,
+      });
+
+      expect(cart.getTotal().getAmount()).toEqual(35388);
     });
   });
 });
