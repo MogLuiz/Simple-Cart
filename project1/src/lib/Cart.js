@@ -73,11 +73,13 @@ export default class Cart {
   }
 
   summary() {
-    const total = this.getTotal().getAmount();
+    const total = this.getTotal();
+    const formatted = total.toFormat('$0,0.00');
     const items = this.items;
 
     return {
       total,
+      formatted,
       items,
     };
   }
